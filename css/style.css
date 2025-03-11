@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(45deg, #ff7b00, #ffcc00, #800080);
+    background-size: 400% 400%;
+    animation: fondoAnimado 10s infinite alternate;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+button {
+    background: linear-gradient(45deg, #ff7b00, #ffcc00);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: gelatina 1s infinite alternate;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff7b00);
+    box-shadow: 0 6px 20px rgba(255, 165, 0, 0.6);
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+input:focus {
+    border-color: #800080;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+}
+
+.container {
+    max-width: 500px;
+}
+
+.card {
+    border-radius: 30px;
+}
+
+.card:hover{
+    transform: scale(1.05) rotateY(360deg);
+    transition: 1.5s;
+}
+
+canvas {
+    max-height: 250px;
+}
+
+.h2{
+    text-shadow: 5px 5px 5px black;
+}
